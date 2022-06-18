@@ -440,7 +440,7 @@ section {
   transition: all 0.3s ease-in-out;
   border-radius: 8px;
   text-align: center;
-  border: 3px solid #62A398;
+  border: 3px solid #fff;
   width: 80%;
 }
 .services .icon-service:hover {
@@ -531,7 +531,7 @@ section {
   color: #009cea;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .pricing h4 sup {
   font-size: 20px;
@@ -548,11 +548,11 @@ section {
   list-style: none;
   color: #444444;
   text-align: center;
-  line-height: 20px;
+  line-height: 18px;
   font-size: 14px;
 }
 .pricing ul li {
-  padding-bottom: 16px;
+  padding-bottom: 10px;
 }
 .pricing ul i {
   color: #009cea;
@@ -577,17 +577,6 @@ section {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   text-transform: uppercase;
-}
-.pricing .featured {
-  background: #009cea;
-  border-color: #009cea;
-}
-.pricing .featured h3, .pricing .featured h4, .pricing .featured h4 span, .pricing .featured ul, .pricing .featured ul .na {
-  color: #fff;
-}
-.pricing .featured .btn-buy {
-  background: #fff;
-  color: #009cea;
 }
 .pricing .advanced {
   width: 200px;
