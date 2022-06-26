@@ -47,7 +47,7 @@
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a class="nav-link scrollto" href="#hero">Inicio</a></li>
+          <li><a class="nav-link scrollto" href="#home">Inicio</a></li>
           <li class="dropdown"><a href="#"><span>Nosotros</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a class="nav-link scrollto" href="#about">Nosotros</a></li>
@@ -55,7 +55,7 @@
               <li><a class="nav-link scrollto" href="#testimonials">Testimonios</a></li>
             </ul>
           </li>
-          <li><a class="nav-link scrollto" href="#services">Nuestras service</a></li>
+          <li><a class="nav-link scrollto" href="box.html">Nuestras Box</a></li>
           <li><a class="nav-link scrollto" href="#pricing">Precios</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contacto</a></li>
         </ul>
@@ -71,25 +71,27 @@
     </div>
   </header><!-- End Header -->
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero">
+  <!-- ======= Home Section ======= -->
+  <section id="home">
 
     <div class="container">
-      <div class="row">
-        <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="fade-up">
+      <div class="row home-row">
+        <div class="home-txt" data-aos="fade-up">
           <div>
-            <h1>DESCUBRÍ EL <br> MEJOR CAFE</h1>
-            <h2>Para todos los que deseen explorar <br> y conocer los mejores cafes de <br> especialidad del pais y del mundo</h2>
-            <a href="#about" class="btn-get-started scrollto">Suscribirse</a>
+            <h1>DESCUBRÍ EL MEJOR CAFÉ</h1>
+            <h2>Para todos los que deseen explorar y conocer los mejores cafés de especialidad del país y del mundo</h2>
+            <div id="home-btn">
+              <a href="#about" class="btn btn-get-started scrollto">Suscribirse</a>
+            </div>
           </div>
         </div>
-        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left">
+        <div class="home-img" data-aos="fade-left">
           <img src="assets/img/home.png" class="img-fluid" alt="">
         </div>
       </div>
     </div>
 
-  </section><!-- End Hero -->
+  </section><!-- End Home -->
 
   <main id="main">
 
@@ -105,24 +107,24 @@
           <div class="col d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in">
             <div class="icon-service">
               <div class="icon"><img src="./assets/img/services/icon-card.png" alt="tarjeta"></div>
-              <h4 class="title"><a href="">Suscribite</a></h4>
-              <p class="description">Suscripcion para poder <br> ser parte del club</p>
+              <h3 class="title"><a href="">Suscribite</a></h4>
+              <h4 class="description">Suscripción para poder <br> ser parte del club</h4>
             </div>
           </div>
 
           <div class="col d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-service">
               <div class="icon"><img src="./assets/img/services/icon-beans.png" alt="granos de cafe"></div>
-              <h4 class="title"><a href="">Detalla preferencia</a></h4>
-              <p class="description">Personaliza tu cafe <br> en grano o molido</p>
+              <h3 class="title"><a href="">Detalla preferencia</a></h3>
+              <h4 class="description">Personaliza tu café <br> en grano o molido</h4>
             </div>
           </div>
 
           <div class="col d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon-service">
               <div class="icon"><img src="./assets/img/services/icon-truck.png" alt="camion"></div>
-              <h4 class="title"><a href="">A distrutar!</a></h4>
-              <p class="description">Llegara a tu casa <br> el mejor cafe</p>
+              <h3 class="title"><a href="">¡ A disfrutar !</a></h3>
+              <h4 class="description">Llegará a tu casa <br> el mejor café</h4>
             </div>
           </div>
 
@@ -134,31 +136,28 @@
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
       <div class="container">
-
-        <div class="row">
-          <div class="img col-lg-6" data-aos="zoom-in">
+        <div class="row about-row">
+          <div class="img" data-aos="zoom-in">
             <img src="assets/img/about.png" class="img-fluid" alt="">
           </div>
-          <div class="txt col-lg-6 d-flex flex-column justify-contents-center" data-aos="fade-left">
+          <div class="txt" data-aos="fade-left">
             <div class="content pt-4 pt-lg-0">
-              <h2>NUESTRA PASION</h2>
+              <h2>NUESTRA PASIÓN</h2>
               <p>
                 Somos un grupo de productores independientes de café que decidimos unirnos para crear este club y lograr llevar sus productos a todos aquellos amantes del café, abiertos a descubrir nuevos sabores y variedades.
               </p>
             </div>
           </div>
         </div>
-
       </div>
     </section><!-- End About Section -->
 
     <!-- ======= Pricing Section ======= -->
     <section id="pricing" class="pricing section-bg">
       <div class="container">
-
         <div class="section-title" data-aos="fade-up">
           <h2>LA MEJOR OPCION PARA VOS</h2>
-          <p>Elegi el plan que mas te guste</p>
+          <p>Elegí el plan que más te guste</p>
         </div>
 
         <div class="row">
@@ -169,15 +168,15 @@
               <h2>1 MES</h2>
               <h3>Box Mix</h3>
               <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li class="na">Pharetra massa</li>
-                <li class="na">Massa ultricies mi</li>
+                <li>4 Variadades de café</li>
+                <li>4 Tarjetas de cata</li>
+                <li>Envío gratis</li>
+                <li class="na">Regalo sorpresa</li>
+                <li class="na">Super descuentos</li>
               </ul>
-              <h4><sup>$</sup>6000<span> / mes</span></h4>
+              <h4><sup>$</sup>6000</h4>
               <div class="btn-wrap">
-                <a href="#" class="btn-buy">Suscribirse</a>
+                <a href="#" class="btn btn-buy">Comprar</a>
               </div>
             </div>
           </div>
@@ -188,15 +187,15 @@
               <h2>6 MESES</h2>
               <h3>Box Black</h3>
               <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li class="na">Massa ultricies mi</li>
+                <li>4 Variadades de café</li>
+                <li>4 Tarjetas de cata</li>
+                <li>Envío gratis</li>
+                <li>Regalo sorpresa</li>
+                <li class="na">Super descuentos</li>
               </ul>
               <h4><sup>$</sup>4500<span> / mes</span></h4>
               <div class="btn-wrap">
-                <a href="#" class="btn-buy">Suscribirse</a>
+                <a href="#" class="btn btn-buy">Suscribirse</a>
               </div>
             </div>
           </div>
@@ -207,21 +206,19 @@
               <h2>12 MESES</h2>
               <h3>Box Full</h3>
               <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li>Massa ultricies mi</li>
+                <li>4 Variadades de café</li>
+                <li>4 Tarjetas de cata</li>
+                <li>Envío gratis</li>
+                <li>Regalo sorpresa</li>
+                <li>Super descuentos</li>
               </ul>
               <h4><sup>$</sup>3500<span> / mes</span></h4>
               <div class="btn-wrap">
-                <a href="#" class="btn-buy">Suscribirse</a>
+                <a href="#" class="btn btn-buy">Suscribirse</a>
               </div>
             </div>
           </div>
-
         </div>
-
       </div>
     </section><!-- End Pricing Section -->
 

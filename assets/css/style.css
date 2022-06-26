@@ -39,7 +39,8 @@
 --------------------------------------------------------------*/
 body {
   font-family: 'Montserrat';
-  color: #444444;
+  color: #152445;
+  background-color: #F8F5EF;
 }
 
 a {
@@ -52,12 +53,28 @@ a:hover {
   text-decoration: none;
 }
 
-h1,h2 {
+h1,h2,h3{
   font-family: 'MontserratExtraBold';
 }
 
-h3, h4, h5, h6 {
+h4, h5, h6 {
   font-family: 'MontserratMedium';
+}
+h4 {
+  font-weight: 500;
+}
+
+.btn {
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: #F8F5EF;
+  background: #BC8784; 
 }
 
 /*--------------------------------------------------------------
@@ -112,13 +129,13 @@ h3, h4, h5, h6 {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 #header .logo h1 {
-  font-size: 28px;
+  font-size: 32px;
   margin: 0;
   line-height: 0;
   font-weight: 400;
   letter-spacing: 1.2px;
   font-family: 'Bebas';
-  color: #f8f5ef;
+  color: #F8F5EF;
 }
 #header .logo h1 a, #header .logo h1 a:hover {
   color: #f8f5ef;
@@ -334,63 +351,63 @@ h3, h4, h5, h6 {
 }
 
 /*--------------------------------------------------------------
-# Hero Section
+# home Section
 --------------------------------------------------------------*/
-#hero {
+#home {
   width: 100%;
-  background-image: url("../img/hero-bg.png");
+  background-image: url("../img/home-bg.png");
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: right top;
+  background-size: cover;
+  background-position: center;
   margin-top: 70px;
-  padding: 60px 0;
+  margin-right: 30px;
+  padding: 100px 0;
 }
-#hero h1 {
+#home .home-row {
+  display: grid;
+  grid-template-columns: 450px 800px;
+  justify-content: center;
+}
+#home .home-txt {
+  margin-top: 80px;
+}
+#home h1 {
   margin: 0 0 20px 0;
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 56px;
-  color: #364146;
+  font-size: 60px;
+  font-weight: 800;
+  line-height: 70px;
 }
-#hero h2 {
-  color: #576971;
+#home h2 {
   margin-bottom: 30px;
   font-size: 24px;
   font-family: 'MontserratMedium';
 }
-#hero .btn-get-started {
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
-  font-size: 13px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 12px 28px;
-  border-radius: 50px;
-  transition: 0.5s;
-  color: #fff;
-  background: #70799f;
+#home #home-btn {
+  display: flex;
+  justify-content: center;
 }
-#hero .btn-get-started:hover {
+
+#home .btn-get-started:hover {
   background: #1b2f3a;
 }
-#hero .hero-img {
+#home .home-img {
   text-align: left;
+  width: 100%;
 }
-#hero .hero-img img {
+#home .home-img img {
   width: 100%;
 }
 @media (min-width: 1024px) {
-  #hero {
+  #home {
     background-attachment: fixed;
   }
 }
 @media (max-width: 992px) {
-  #hero h1 {
+  #home h1 {
     font-size: 32px;
     line-height: 40px;
   }
-  #hero h2 {
+  #home h2 {
     font-size: 20px;
   }
 }
@@ -399,12 +416,8 @@ h3, h4, h5, h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 50px 0;
   overflow: hidden;
-}
-
-.section-bg {
-  background-color: #f7f8f9;
 }
 
 .section-title {
@@ -427,6 +440,7 @@ section {
 --------------------------------------------------------------*/
 .services .section-title h2 {
   color: #152445;
+  margin: 50px 0;
 }
 .services .col {
   justify-content: center; 
@@ -440,7 +454,6 @@ section {
   transition: all 0.3s ease-in-out;
   border-radius: 8px;
   text-align: center;
-  border: 3px solid #fff;
   width: 80%;
 }
 .services .icon-service:hover {
@@ -471,7 +484,7 @@ section {
 --------------------------------------------------------------*/
 .about {
   padding: 0;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 .about .container {
   padding: 60px 50px;
@@ -481,21 +494,28 @@ section {
     padding: 30px;
   }
 }
-.about .container .img {
-  height: 400px;
-  display: flex;
+.about .about-row {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 45% 55%;
   justify-content: center;
 }
-.about .container .txt {
+.about .img {
+  height: 500px;
+  display: flex;
+  justify-content: right;
+  padding-right: 35px;
+}
+.about .txt {
   display: flex;
   justify-content: space-around;
+  padding: 150px 170px 120px 0;
 }
-.about .content h2 {
+.about h2 {
   font-weight: 400;
   font-size: 32px;
-  color: #364146;
 }
-.about .content p {
+.about p {
   margin-bottom: 0;
   font-size: 20px;
 }
@@ -503,59 +523,66 @@ section {
 /*--------------------------------------------------------------
 # Pricing
 --------------------------------------------------------------*/
+.pricing {
+  background-color: #70799f;
+}
+.pricing .section-title h2{
+  color: #E5E5E5;
+}
+.pricing .section-title p{
+  color: #E5E5E5;
+  font-size: 20px;
+}
+
 .pricing .box {
   padding: 20px;
-  background: #fff;
+  background: #E5E5E5;
   text-align: center;
   border-radius: 4px;
   position: relative;
   overflow: hidden;
-  border: 2px solid #e9ecee;
   margin: 10px 50px;
+  width: 280px;
 }
 .pricing img {
-  height: 150px;
+  height: 130px;
 }
 .pricing h2 {
-  padding: 20px 15px 0 15px;
+  padding: 3px 15px 0 15px;
+  font-size: 28px;
 }
 .pricing h3 {
   font-weight: 400;
-  padding: 10px 15px;
+  padding: 3px 15px;
   font-size: 18px;
   font-weight: 400;
-  color: #777777;
 }
 .pricing h4 {
-  font-size: 36px;
-  color: #009cea;
+  font-size: 24px;
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .pricing h4 sup {
-  font-size: 20px;
-  top: -15px;
+  font-size: 14px;
+  top: -12px;
   left: -3px;
 }
 .pricing h4 span {
   color: #bababa;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 300;
 }
 .pricing ul {
   padding: 0;
   list-style: none;
-  color: #444444;
   text-align: center;
-  line-height: 18px;
-  font-size: 14px;
+  line-height: 15px;
+  font-size: 15px;
 }
 .pricing ul li {
-  padding-bottom: 10px;
+  padding-bottom: 7px;
 }
 .pricing ul i {
-  color: #009cea;
   font-size: 18px;
   padding-right: 4px;
 }
@@ -564,20 +591,14 @@ section {
   text-decoration: line-through;
 }
 .pricing .btn-wrap {
-  padding: 20px 15px;
+  padding: 10px 15px;
   text-align: center;
 }
 .pricing .btn-buy {
-  background: #009cea;
-  display: inline-block;
-  padding: 8px 30px;
-  border-radius: 50px;
-  color: #fff;
-  font-size: 13px;
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
-  text-transform: uppercase;
+  font-size: 14px;
+  padding: 8px 20px;
 }
+
 .pricing .advanced {
   width: 200px;
   position: absolute;
@@ -587,7 +608,6 @@ section {
   z-index: 1;
   font-size: 14px;
   padding: 1px 0 3px 0;
-  background: #009cea;
   color: #fff;
 }
 
